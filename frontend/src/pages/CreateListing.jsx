@@ -139,20 +139,29 @@ export default function CreateListing() {
         }),
       });
 
-      const data = await res.json();
+     const data = await res.json();
 
-      setLoading(false);
+console.log(data);
 
-      if (data.success === false) {
-        setError(data.message);
-      }
+setLoading(false);
 
-      navigate(`/listing/${data._id}`);
-    } catch (error) {
-      setError(error.message);
-      setLoading(false);
-    }
-  };
+if (data.success === false) {
+  setError(data.message);
+  return;
+}
+
+if (!data._id) {
+  setError('Listing ID not found');
+  console.log('Listing ID missing:', data);
+  return;
+}
+
+navigate(`/listing/${data._id}`);
+  } catch (error) {
+    setError(error.message);
+    setLoading(false);
+  }
+};
 
   return (
     <main className='p-3 max-w-4xl mx-auto'>
