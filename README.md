@@ -14,7 +14,6 @@ A full-stack MERN web application that allows users to explore, create, and mana
 - 📩 Buyer–Owner Contact through Email
 - 🗄️ MongoDB Database Integration
 - ⚡ Responsive Modern UI
-- ☁️ Cloudinary Image Storage
 
 ---
 
