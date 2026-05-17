@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.header{
+    background-color:#091D35;
+}
+
+.home-top{
+    background-image: url(82fcd3_1dcc53b4e88842c7816a8251e1102530~mv2_d_4896_3264_s_4_2.webp);
+    background-size: cover;
+    margin-left: 0px;
+    height:800px;
+    width: 100%;
+    background-color: white;
+}
+
+.main-text{
+    font-family: 'oswald', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-left: 45px;
+}
+
+.sub-text{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+@media (min-width: 640px) {
+    .sub-text {
+      margin-top: 350px;
+      margin-left: 45px;
+      font-size: 18px;
+    }
+}
+
+.link{
+    font-family: 'oswald', sans-serif;
+    margin-left: 0px;
+    color: #fefefe;
+}
+
+.enter{
+    display: flex;
+    align-items:center;
+    background-color: red;
+    width: 75px;
+    margin-left: 45px;
+    padding-left: 10px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    height: 75px;
+}
+
+.bottom {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top:0px;
+    margin-bottom: 0;
+    background-color: rgb(255, 255, 255);
+    margin-left: 55px;
+}

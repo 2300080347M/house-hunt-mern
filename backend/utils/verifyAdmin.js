@@ -1,0 +1,7 @@
+export const verifyAdmin = (req, res, next) => {
+  if (!req.user.isAdmin) {
+    return res.status(403).json('Admin access only');
+  }
+
+  next();
+};
