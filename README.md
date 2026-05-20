@@ -128,8 +128,6 @@ Users can directly contact property owners through integrated email support.
 - Mongoose
 
 ## Other Tools
-- Firebase Authentication
-- Cloudinary
 - Nodemailer
 - MongoDB Compass
 
